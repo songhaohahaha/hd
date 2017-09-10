@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// for(var i=40; i>=30; i--){
+		// 	document.write(i+'、');
+		// }
+		// for(var i=10; i>0;i--){
+		// 	document.write('❤');
+		// }
+		// 九九乘法表
+		// for(var j=1;j<=9;j++){
+		// 	for(var i=1;i<=j;i++){
+		// 		document.write(i+"*"+j+"="+i*j+"&nbsp;");
+		// 	}
+		// 	document.write("</br>");
+		// }
+	</script>
+	<script>
+		// for (var i = 0;i<5;i++){
+		// 	for(var j=0;j<i;j++){
+		// 		document.write('b');
+		// 	}
+		// 	for(var e =5;e<5;e--){
+		// 		document.write('a');
+		// 	}
+		// 	document.write("</br>");
+		// }
+	</script>
+	<!-- 金字塔 -->
+	<script>
+		var rows = prompt('请输入行数');
+		for (var i = 1; i<=rows; i++){
+
+			// 输出rows-i个a
+			
+			for (var x = 0;x<rows-i; x++){
+				document.write("#");
+			}
+
+			// 输出i*2+1个b
+			
+			for (var y = 0; y<i*2-1; y++){
+				document.write("b");
+			}
+			document.write("<br/>")
+		}
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

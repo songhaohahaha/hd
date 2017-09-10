@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#hd{
+			width: 500px;
+			height: 500px;
+			margin: 10px auto;
+			background: purple;
+		}
+	</style>
+	<script>
+	// 第一种
+		// window.onload = function(){
+		// 	document.getElementById('hd').onclick = function(){
+		// 		alert('haha');
+		// 	}
+		// }
+
+		// function hi(){
+		// 	al9ert('nihao')
+		// }
+
+	</script>
+	<script>
+	// 事件监听  不支持低版本ie
+	// 
+	// 判断浏览器版本
+	if(document.all){
+		alert('dibanben')
+	}else{
+		alert('w3c')
+	}
+	// 第一个参数名称不用写on
+	window.onload = function(){
+		document.getElementById("hd").addEventListener('click',function(){
+			alert('chufa!');
+		})
+		document.getElementById("hd").attachEvent('onclick',function(){
+			alert('低版本IE才能触发');
+		})
+	}
+	</script>
+</head>
+<body>
+	<!-- 第二种 -->
+	<div id="hd" onclick = "hi()"></div>
+</body>
+</html>

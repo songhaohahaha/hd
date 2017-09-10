@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	// window对象
+	// 	鞭炮
+		var timer = setInterval(function(){
+			alert('boom...');
+		},1000)
+		//  定时炸弹setTimeout()
+		//  clearIneterval()清除炸弹；
+		setTimeout(function(){
+			clearInterval(timer);
+		},5000)
+		var re = confirm('你确定要爱我吗');
+		if(re){
+			document.write('1');
+		}else{
+			document.write('2');
+		}
+	</script>
+	<script>
+	// history对象
+		// history.back(); 返回上一个访问记录
+		// history.go(-1); 返回上一个访问记录
+	</script>
+	<script>
+	// location
+	// 跳转
+	// setTimeout(function(){
+	// 	location.replace('http://houdunren.com');
+	// 	location.assign();
+	// 	location.href = '';
+	// },3000)
+	// location.reload();  重新加载
+	// 
+	</script>
+</body>
+</html>

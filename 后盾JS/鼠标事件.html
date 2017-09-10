@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#hd{
+			width: 500px;
+			height: 500px;
+			margin: 50px auto;
+			background: skyblue;
+		}
+	</style>
+	<script type="text/javascript">
+
+	// window.onload = function(){
+	// 	// 单击  双击是 ondblclick；
+	// 	// document.getElementById("hd").onclick = function (){ 
+	// 	// 	alert('renren222');
+	// 	// }
+	// 	document.getElementById("hd").ondblclick = function (){ 
+	// 		alert('renren');
+	// 	}
+	// }
+	
+	</script>
+	<!-- 鼠标移入 -->
+	<script>
+	// 点击一下触发
+	window.onload = function(){
+		document.getElementById("hd").onmousedown = function (){ 
+			alert('renren');
+		}
+	}
+	// 移入触发
+	// window.onload = function(){
+	// 	document.getElementById("hd").onmouseover = function (){ 
+	// 		alert('renren');
+	// 	}
+	// }
+	
+	// 鼠标移出事件
+	window.onload = function (){
+		document.getElementById("hd").onmouseout = function(){
+			alert('go')
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<div id="hd"></div>
+</body>
+
+</html>
